@@ -1,0 +1,233 @@
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+body{
+    height:100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+/* .........................................add field............................................ */
+.add_field{
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.add_field  >button{
+    color:white;
+    background-color: #000;
+}
+/* .........................................form field.... popup........................................................................... */
+.popup_field{
+    width:100%;
+    height:100%;
+    position:fixed;  
+    z-index: 1;   
+    top:0px;
+    left:0px;
+    background:rgba(0,0,0,0.75);
+}
+.form_field{
+    max-width:700px;
+    width:30%;
+    padding:40px;
+    position:absolute;
+    z-index: 1;   
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%); 
+    box-shadow:0px 2px 6px rgba(0,0,0,5);
+    border-radius:3px;
+    background:#fff;
+}
+.close{
+   display:flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.close >i {
+    color: #aaaaaa;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close>i:hover,.close>i:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+} 
+/* ..............................form.............................................. */
+.forms{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+label{
+    padding: 8px;
+}
+/* ..................................................................................... */
+
+/* ............................................search.......................................... */
+.search{
+    width:50%
+}
+.head_field{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.head{
+    display: flex;
+    width:50%
+}
+.head > p{
+    font-size:14px;
+    margin-top: 8px;
+    padding-left: 20px;
+}
+.search input{
+    width:50%;
+    padding:15px 15px;
+    border-radius: 0px;
+    outline:none;
+    border:1px solid rgb(212, 190, 190);
+    float: right;
+    height: 33px;
+}
+.bi-search{
+    padding-left: 30px;
+}
+/* .....................................action dropdown.............................................. */
+.dropbtn >i{
+    position: absolute;
+    font-size: 13px;
+    top:6px;
+    padding-left: 3px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropbtn{
+    cursor: pointer;
+    color:white;
+    background-color: rgb(100 94 94);
+    width: 95px;
+    height: 29px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+ .dropdown-content a {
+    color: black;
+    padding: 4px 6px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+ background-color: #f1f1f1
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* ......................................................................................... */
+.button{
+    column-gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 14px 14px 0px 5px;
+    width: 100%;
+}
+
+button{
+    height: 1.5rem;
+    width: 4rem;
+}
+.container{
+    margin: 0 auto;
+    padding:1.5rem;
+    box-shadow:0px 5px 10px rgba(0,0,0,6);
+    /* border-radius: 10px; */
+    background-color: white;
+    width:98%;
+}
+h1{
+    display:flex;
+    align-items:start;
+    justify-content: center;
+    padding-top: 20px;
+    /* color:white */
+}
+table{
+    width:100%;
+    margin-top: 10px;
+}
+tr{
+    height: 30px;
+    text-align: center;
+}
+th{
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    height: 28px;
+    text-transform: uppercase;
+    position:relative;
+    font-family: serif;
+    font-size: 13px;
+}
+#person_list button{
+    border:none
+}
+#pagination{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+#pagination button {
+    border-radius: 2px;
+    padding: 5px 12px;
+    display: flex;
+    height: 25px;
+    width: 3%;
+    align-items: center;
+    margin-left: 10px;
+    border: 0.5px solid #6b6b72;
+}
+#pagination button:active{
+    background-color:#080813;
+    color:white;
+}
+#person_list tr:nth-child(odd) {
+    background-color: rgba(26, 26, 26, 0.05);
+}
+.bi-caret-down{
+    position: absolute;
+    font-size: 13px;
+    top:12px;
+}
+.bi-caret-up{
+    position: absolute;
+    bottom: 12px;
+    font-size: 13px;
+   
+}
+.bi-caret-up-fill{
+    position: absolute;
+    bottom: 6px;
+    font-size: 13px;
+}
+.bi-caret-down-fill{
+  position: absolute;
+    top:6px;
+    font-size: 13px;
+}
